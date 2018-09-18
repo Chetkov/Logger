@@ -1,0 +1,29 @@
+{
+    "name": "v.chetkov/logger",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Валерий Четков",
+            "email": "chetkov.valeriy@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "mongodb/mongodb": "^1.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chetkov\\Logger\\":"src/"
+        },
+        "files": ["constants.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Chetkov\\Logger\\": "tests/"
+        }
+    }
+}
