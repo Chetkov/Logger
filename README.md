@@ -10,7 +10,7 @@ $logger->debug('Тест уровня логгирования: DEBUG');
  - implementation (FILE/MONGO, по умолчанию: MONGO)
  - config (по умолчанию подхватится конфиг из /config)
  
- ###MongoLogger
+ #### MongoLogger
  Конфиг по умолчанию:
  ```php
 <?php
@@ -27,7 +27,7 @@ return [
 ];
 ```
  
- ###FileLogger
+ #### FileLogger
  Конфиг по умолчанию:
  ```php
 <?php
