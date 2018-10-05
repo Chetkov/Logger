@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mongodb/mongo-php-library.git",
-                "reference": "25aeff8e669e6821bc607023e581d6ad6aa5f3f0"
+                "reference": "21d3595478d806e0a4c5f9e56ad35c9368a95fa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mongodb/mongo-php-library/zipball/25aeff8e669e6821bc607023e581d6ad6aa5f3f0",
-                "reference": "25aeff8e669e6821bc607023e581d6ad6aa5f3f0",
+                "url": "https://api.github.com/repos/mongodb/mongo-php-library/zipball/21d3595478d806e0a4c5f9e56ad35c9368a95fa2",
+                "reference": "21d3595478d806e0a4c5f9e56ad35c9368a95fa2",
                 "shasum": ""
             },
             "require": {
@@ -70,7 +70,7 @@
                 "mongodb",
                 "persistence"
             ],
-            "time": "2018-09-05 10:36:12"
+            "time": "2018-09-28 17:33:46"
         }
     ],
     "packages-dev": [
@@ -80,19 +80,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "8788c31191242bca77a260b1d2c2621f18c9c1c3"
+                "reference": "8f58c558d3263405c13df40489c35fe1eefd8f0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/8788c31191242bca77a260b1d2c2621f18c9c1c3",
-                "reference": "8788c31191242bca77a260b1d2c2621f18c9c1c3",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/8f58c558d3263405c13df40489c35fe1eefd8f0e",
+                "reference": "8f58c558d3263405c13df40489c35fe1eefd8f0e",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^4.0",
+                "doctrine/coding-standard": "^5.0",
                 "ext-pdo": "*",
                 "ext-phar": "*",
                 "phpbench/phpbench": "^0.13",
@@ -127,7 +127,7 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2018-09-05 19:40:54"
+            "time": "2018-09-25 21:32:24"
         },
         {
             "name": "myclabs/deep-copy",
@@ -1375,7 +1375,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6.0"
+                "php": "^7.1"
             },
             "type": "library",
             "extra": {
