@@ -48,7 +48,7 @@ class LoggerServiceFactory
      * @param string $implementation
      * @param array $config
      * @return LoggerService
-     * @throws \Chetkov\Logger\LoggerServiceException
+     * @throws LoggerServiceException
      */
     public function build(string $name, string $implementation = LoggerService::IMPLEMENTATION_MONGO, array $config = []): LoggerService
     {
@@ -84,10 +84,7 @@ class LoggerServiceFactory
      */
     private function buildLoggerImplementation(string $name, string $implementation, array $config): LoggerImplementation
     {
-        $dateFormatForGrouping = LoggerService::DEFAULT_DATE_FORMAT_FOR_GROUPING;
-        if (isset($config['date_format_for_grouping'])) {
-            $dateFormatForGrouping = $config['date_format_for_grouping'];
-        }
+        $dateFormatForGrouping = $config['date_format_for_grouping'] ?? LoggerService::DEFAULT_DATE_FORMAT_FOR_GROUPING;
 
         switch ($implementation) {
             case LoggerService::IMPLEMENTATION_FILE:

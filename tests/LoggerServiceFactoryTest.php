@@ -40,11 +40,11 @@ class LoggerServiceFactoryTest extends TestCase
     }
 
     /**
-     * @throws \Chetkov\Logger\LoggerServiceException
+     * @throws LoggerServiceException
      */
     public function testBuild(): void
     {
-        $loggerService = $this->loggerServiceFactory->build('TempForTesting', LoggerService::IMPLEMENTATION_MONGO);
+        $loggerService = $this->loggerServiceFactory->build('TempForTesting');
         $this->assertInstanceOf(LoggerService::class, $loggerService);
 
         $loggerService = $this->loggerServiceFactory->build('TempForTesting', LoggerService::IMPLEMENTATION_FILE, [
@@ -60,9 +60,5 @@ class LoggerServiceFactoryTest extends TestCase
         $this->loggerServiceFactory->build('TempForTesting', 'UNKNOWN', [
             'path' => $this->getTmpDirPath(),
         ]);
-    }
-
-    public function testLoadDefaultConfig(): void
-    {
     }
 }

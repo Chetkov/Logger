@@ -4,7 +4,7 @@ namespace Tests\Chetkov\Logger;
 
 use Chetkov\Logger\Implementation\File\FileLogger;
 use PHPUnit\Framework\TestCase;
-use Chetkov\Logger\LoggerService;
+use Psr\Log\LogLevel;
 use Tests\Chetkov\Logger\Tool\TempFilesManager;
 
 /**
@@ -25,7 +25,7 @@ class FileLoggerTest extends TestCase
         $fileLogger = new FileLogger($tmpDirectoryPath, $logName);
 
         $message = 'Тестовое сообщение';
-        $level = strtoupper(LoggerService::LEVEL_INFO);
+        $level = strtoupper(LogLevel::INFO);
         $data = ['тест' => 'тест'];
         $fileLogger->log($message, $level, $data);
 

@@ -5,7 +5,7 @@ namespace Tests\Chetkov\Logger;
 use MongoDB\Client;
 use Chetkov\Logger\Implementation\Mongo\MongoLogger;
 use PHPUnit\Framework\TestCase;
-use Chetkov\Logger\LoggerService;
+use Psr\Log\LogLevel;
 
 /**
  * Class MongoLoggerTest
@@ -27,7 +27,7 @@ class MongoLoggerTest extends TestCase
         $collectionName .= '_' . (new \DateTime())->format($dateFormatForGrouping);
 
         $message = 'Тестовое сообщение';
-        $level = strtoupper(LoggerService::LEVEL_INFO);
+        $level = strtoupper(LogLevel::INFO);
         $data = ['test' => 'test'];
         $mongoLogger->log($message, $level, $data);
 

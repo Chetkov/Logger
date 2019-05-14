@@ -40,10 +40,7 @@ class LoggerServiceTest extends TestCase
     {
         $config = require LOGGER_ROOT . '/config/FileLoggerConfig.php';
 
-        $dateFormatForGrouping = LoggerService::DEFAULT_DATE_FORMAT_FOR_GROUPING;
-        if (isset($config['date_format_for_grouping'])) {
-            $dateFormatForGrouping = $config['date_format_for_grouping'];
-        }
+        $dateFormatForGrouping = $config['date_format_for_grouping'] ?? LoggerService::DEFAULT_DATE_FORMAT_FOR_GROUPING;
 
         $path = $this->getTmpDirPath();
         if ($dateFormatForGrouping) {
