@@ -3,3 +3,4 @@ vendor
 /logs
 /tests/coverage
 phpunit.xml
+composer.lock
